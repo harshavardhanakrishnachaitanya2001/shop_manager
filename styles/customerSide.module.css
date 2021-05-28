@@ -1,4 +1,8 @@
 .mainHeading{
     text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
     font-size: 4rem;
+    font-family: sans-serif;
 }

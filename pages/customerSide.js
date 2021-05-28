@@ -1,9 +1,13 @@
 import React from 'react'
 import styles from '../styles/customerSide.module.css'
+import Head from 'next/head'
 function customerSide(){
     return (
         <>
-            <h1 classNam={styles.mainHeading}>Customer side</h1>
+            <Head>
+                <title>customer side</title>
+            </Head>
+            <h1 className={styles.mainHeading}>Customer side</h1>
         </>
     )
 }

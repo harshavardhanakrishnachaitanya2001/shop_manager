@@ -1,4 +1,22 @@
 .mainHeading{
     text-align: center;
+    font-family: sans-serif;
     font-size: 4rem;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.itemDetails{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.itemDetails form label{
+    font-size: 20px;
+}
+
+.itemDetails form label input{
+    border:2px solid black;
+    font-size: 15px;
+    text-align: center;
 }
