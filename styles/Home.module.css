@@ -10,16 +10,23 @@
   text-align: center;
   font-family: sans-serif;
 }
+.form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-.userInput{
-  text-align: center;
+}
+.form input{
+  border:2px solid orange;
+}
+.form label{
+  font-size: 25px;
 }
 
-.userInput label{
-  font-size: 24px;
+.body{
+  background-color: orange;
 }
 
-.userInput label input{
-  border:2px solid black;
-  text-align: center;
+.form button{
+  display: block;
 }
