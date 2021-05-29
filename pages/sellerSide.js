@@ -16,16 +16,15 @@ function sellerSide(){
             <h1 className={styles.mainHeading}>Seller side</h1>
             <form className={styles.form}>
                 <label>
-                    Number of products:
-                    <input type='number'/>
-                </label>
-                <label>
-                    Name of products
+                    Number of items:
                     <input type='text'/>
                 </label>
                 <label>
-                    Price of products
+                    Names of items: 
                     <input type='text'/>
+                </label>
+                <label>
+                    
                 </label>
             </form>
         </>
