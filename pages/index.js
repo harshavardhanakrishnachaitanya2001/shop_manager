@@ -40,10 +40,10 @@ export default function Home() {
   }
 
   const customerInfo = customerDetails.map((d)=>{return (
-    <ul key={d.name}>
-      <li>{d.name}</li>
-      <li>{d.phoneNumber}</li>
-      <li>{d.address}</li>
+    <ul key={d.name} style={{listStyle:'none', fontSize:'25px'}}>
+      <li>{"Registered name: " + d.name}</li>
+      <li>{"Registered phone number: " + d.phoneNumber}</li>
+      <li>{"Registered Address: " + d.address}</li>
     </ul>
   )})
 
