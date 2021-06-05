@@ -9,6 +9,7 @@ export default function Home() {
   const [item,setItem]=useState('');
   const [quantity,setQuantity]=useState();
   const [customerDetails,setCustomerDetails]=useState([]);
+  const [registerStatus,setRegisterStatus]=useState(false);
 
   const handleNameChange = (e) => {
     setName(e.target.value)
@@ -22,21 +23,14 @@ export default function Home() {
     setCustomerAddress(e.target.value)
   }
 
-  const handleItemToBuy = (e) => {
-    setItem(e.target.value)
-  }
-
-  const handleQuantityChange = (e) => {
-    setQuantity(e.target.value)
-  }
-
-  const handleCustomerInfoSubmission = (e) => {
+  function handleCustomerInfoSubmission(e){
     e.preventDefault();
     setCustomerDetails([{
       "name": name,
       "phoneNumber": phoneNumber,
       "address": customerAddress
     }]);
+    setRegisterStatus(true)
   }
 
   const customerInfo = customerDetails.map((d)=>{return (
@@ -67,9 +61,9 @@ export default function Home() {
             Address:
             <textarea onChange={handleAddressChange} value={customerAddress}/>
           </label>
-          <button type='submit'>OK</button>
+          <button type='submit'>Register</button>
         </form>
-        {customerInfo}
+        {registerStatus?<h1>{name + ', congrats. You are registered'}</h1> : <h1>Please register to shop in AKC store</h1>}
       </body>
     </div>
   )
