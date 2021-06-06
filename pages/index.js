@@ -86,7 +86,7 @@ export default function Home() {
           </label>
           <button type='submit'>Register</button>
         </form>
-        {!varifyPassword?'Passwords do not match. Check if the passwords you entered are the same':''}
+        {!varifyPassword?<h4>Passwords do not match. Check if the passwords you entered are the same</h4>:''}
         {registerStatus?<h1>{'Congrats ' + name + '! You are a customer of AKC store!!'}</h1> : <h1>Register to AKC store to shop for awsome products</h1>}
       </body>
     </div>
