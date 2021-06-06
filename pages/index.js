@@ -10,6 +10,10 @@ export default function Home() {
   const [quantity,setQuantity]=useState();
   const [customerDetails,setCustomerDetails]=useState([]);
   const [registerStatus,setRegisterStatus]=useState(false);
+  const [password,setPassword]=useState('');
+  const [confirmPassword,setConfirmedPassword]=useState('');
+
+  let passwordVarification;
 
   const handleNameChange = (e) => {
     setName(e.target.value)
@@ -28,7 +32,7 @@ export default function Home() {
     setCustomerDetails([{
       "name": name,
       "phoneNumber": phoneNumber,
-      "address": customerAddress
+      "address": customerAddress,
     }]);
     setRegisterStatus(true)
   }
